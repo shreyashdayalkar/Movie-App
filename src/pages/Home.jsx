@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedQuery(searchQuery);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [searchQuery]);
